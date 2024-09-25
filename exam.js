@@ -41,7 +41,7 @@ function solveSecretFromJSON() {
 
     const points = [];
     
-    // Decode and print Y values
+     //Decode and print Y values
     console.log("Decoded Y values:");
     for (let i = 1; i <= n; i++) {
         const x = i; 
@@ -50,7 +50,7 @@ function solveSecretFromJSON() {
         points.push([x, y]);
         
         // Print the decoded values
-        console.log(`x: ${x}, base: ${base}, value: ${input[i].value}, decoded y: ${y}`);
+        //console.log(`x: ${x}, base: ${base}, value: ${input[i].value}, decoded y: ${y}`);
     }
 
     const constantTerm = lagrangeInterpolation(points.slice(0, k));
