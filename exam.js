@@ -25,7 +25,7 @@ function lagrangeInterpolation(points) {
 }
 
 function solveSecretFromJSON() {
-    let input;
+    let input;  
 
     try {
         const data = fs.readFileSync('./input.json', 'utf8');
